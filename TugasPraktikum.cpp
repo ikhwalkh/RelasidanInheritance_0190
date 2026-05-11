@@ -50,3 +50,13 @@ public:
 
     void showAllMember(vector<member*> daftarMember) {
         cout << "===== Daftar Member =====" << endl;
+
+        for (auto& m : daftarMember) {
+            cout << "ID     : " << m->id << endl;
+            cout << "Nama   : " << m->nama << endl;
+            cout << "Email  : " << m->email << endl;
+            cout << "Status : "
+                 << (m->status ? "Aktif" : "Nonaktif") << endl;
+            cout << "-------------------------" << endl;
+        }
+    }

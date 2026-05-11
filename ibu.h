@@ -1,11 +1,11 @@
 #ifndef IBU_H
 #define IBU_H
-#include <vektor>
+#include <vector>
 
 class ibu {
     public:
     string nama;
-    vektor<anak*> daftar_anak;
+    vector<anak*> daftar_anak;
 
     ibu(string pNama) :nama(pNama) {
         cout << "Ibu \"" << nama << "\" ada\n";

@@ -21,3 +21,5 @@ public:
         return ++globalId;
     }
 };
+
+int user::globalId = 0;

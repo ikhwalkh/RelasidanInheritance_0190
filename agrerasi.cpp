@@ -4,6 +4,7 @@ using namespace std;
 #include "anak.h"
 #include "ibu.h"
 
+//int main nya
 int main() { //agregasi
     ibu* varIbu = new ibu("dini");
     ibu* varibu2 = new ibu("novi");

@@ -60,3 +60,12 @@ public:
             cout << "-------------------------" << endl;
         }
     }
+
+     void toggleActivationMember(member* m) {
+        m->status = !m->status;
+
+        cout << "Status member " << m->nama
+             << " berhasil diubah menjadi "
+             << (m->status ? "Aktif" : "Nonaktif") << endl;
+    }
+};

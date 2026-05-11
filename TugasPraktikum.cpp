@@ -10,3 +10,9 @@ public:
     int id;
     string nama;
     string email;
+
+    user(string pNama, string pEmail) {
+        id = generateId();
+        nama = pNama;
+        email = pEmail;
+    }

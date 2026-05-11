@@ -4,7 +4,7 @@
 using namespace std;
 
 class jantung {
-    public:
+public:
     jantung() {
         cout << "jantung dihidupkan\n";
     }

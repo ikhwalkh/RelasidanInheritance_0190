@@ -1,9 +1,10 @@
 #ifndef JANTUNG_H
 #define JANTUNG_H
+
 using namespace std;
 
 class jantung {
-public:
+    public:
     jantung() {
         cout << "jantung dihidupkan\n";
     }
@@ -11,5 +12,4 @@ public:
         cout << "jantung dimatikan\n";
     }
 };
-
 #endif

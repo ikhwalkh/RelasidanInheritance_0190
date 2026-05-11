@@ -42,3 +42,11 @@ public:
         cout << endl;
     }
 };
+
+class admin : public user {
+public:
+    admin(string pNama, string pEmail)
+        : user(pNama, pEmail) {}
+
+    void showAllMember(vector<member*> daftarMember) {
+        cout << "===== Daftar Member =====" << endl;

@@ -23,3 +23,22 @@ public:
 };
 
 int user::globalId = 0;
+
+class member : public user {
+public:
+    bool status;
+
+    member(string pNama, string pEmail, bool pStatus)
+        : user(pNama, pEmail) {
+        status = pStatus;
+    }
+
+    void showProfile() {
+        cout << "===== Profile Member =====" << endl;
+        cout << "ID     : " << id << endl;
+        cout << "Nama   : " << nama << endl;
+        cout << "Email  : " << email << endl;
+        cout << "Status : " << (status ? "Aktif" : "Nonaktif") << endl;
+        cout << endl;
+    }
+};

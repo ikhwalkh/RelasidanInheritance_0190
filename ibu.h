@@ -2,9 +2,8 @@
 #define IBU_H
 #include <vector>
 
-//class ibu
 class ibu {
-    public:
+public:
     string nama;
     vector<anak*> daftar_anak;
 
@@ -14,22 +13,20 @@ class ibu {
     ~ibu() {
         cout << "Ibu \"" << nama << "\" tidak ada\n";
     }
-    void tambahAnak(anak*);
+    void tambahAnak (anak*);
     void cetakAnak();
 };
-// void ibu
-void ibu::tambahAnak(anak* pAnak) { //void ibu
+void ibu::tambahAnak (anak* pAnak) {
     daftar_anak.push_back(pAnak);
 }
 void ibu::cetakAnak() {
     cout << "Daftar Anak dari Ibu \"" << this->nama << "\":\n";
-
-
-
-    for (int i = 0; i < daftar_anak.size(); i++)
-    {
+    /*for (auto& a: daftar_anak) {
+        cout << a->nama << "\n";
+    }*/
+    for (int i = 0; i < daftar_anak.size(); i++) {
         cout << daftar_anak[i]->nama << endl;
     }
-    cout << endl; 
+    cout << endl;
 }
 #endif

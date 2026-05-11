@@ -69,3 +69,28 @@ public:
              << (m->status ? "Aktif" : "Nonaktif") << endl;
     }
 };
+
+int main() {
+
+    admin admin1("Ryu Katsuya Ikhwal", "ryu@gmail.com");
+
+    member member1("Ryu", "ryu1@gmail.com", true);
+    member member2("Ryu Katsuya", "ryu2@gmail.com", false);
+
+    vector<member*> daftarMember;
+
+    daftarMember.push_back(&member1);
+    daftarMember.push_back(&member2);
+
+    admin1.showAllMember(daftarMember);
+
+    member1.showProfile();
+
+    admin1.toggleActivationMember(&member2);
+
+    cout << endl;
+
+    admin1.showAllMember(daftarMember);
+
+    return 0;
+}

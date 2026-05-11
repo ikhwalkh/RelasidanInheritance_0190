@@ -2,6 +2,7 @@
 #include <string>
 using namespace std;
 
+//class orang
 class orang {
 public:
     string nama;

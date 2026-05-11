@@ -16,3 +16,8 @@ public:
         nama = pNama;
         email = pEmail;
     }
+
+    static int generateId() {
+        return ++globalId;
+    }
+};
